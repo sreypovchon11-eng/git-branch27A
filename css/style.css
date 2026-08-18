@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1769aa;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1769aa;
+}
+
+
+/* Apply Button */
+
+header > a {
+    text-decoration: none;
+    background-color: #1769aa;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+header > a:hover {
+    background-color: #0d4f85;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #eaf5ff,
+        #ffffff
+    );
+}
+
+
+/* Hero Text */
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    line-height: 1.1;
+
+    color: #123c66;
+
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+
+    margin-bottom: 30px;
+
+    max-width: 600px;
+}
+
+
+/* Hero Button */
+
+.hero-content a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #1769aa;
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-content a:hover {
+    background-color: #0d4f85;
+}
+
+
+/* Hero Image */
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section:not(.hero) {
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+
+    color: #123c66;
+
+    margin-bottom: 20px;
+}
+
+section > p {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    color: #666;
+}
+
+
+/* =========================
+   PROGRAMS
+========================= */
+
+#programs {
+    background-color: #ffffff;
+}
+
+.program {
+    display: inline-block;
+
+    width: 28%;
+
+    margin: 20px 1%;
+
+    padding: 30px;
+
+    background-color: #f5f8fc;
+
+    border-radius: 15px;
+
+    vertical-align: top;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.program:hover {
+    transform: translateY(-8px);
+}
+
+.program h3 {
+    color: #1769aa;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.program p {
+    color: #666;
+}
+
+
+/* =========================
+   TEACHERS
+========================= */
+
+#teachers {
+    background-color: #f5f8fc;
+}
+
+.teacher {
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.teacher h3 {
+    color: #1769aa;
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.teacher p {
+    color: #666;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: #1769aa;
+
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    color: #e8f3ff;
+
+    margin-bottom: 10px;
+}
+
+#contact a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    background-color: white;
+
+    color: #1769aa;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    background-color: #e8f3ff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 25px 8%;
+
+    text-align: center;
+
+    background-color: #123c66;
+
+    color: white;
+}
+
+footer p {
+    color: #d9e8f5;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .program {
+        width: 45%;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    header > a {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    /* Sections */
+
+    section:not(.hero) {
+        padding: 60px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+
+    /* Programs */
+
+    .program {
+        width: 100%;
+
+        margin: 15px 0;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 25px 20px;
+    }
+}
